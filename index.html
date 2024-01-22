@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,21 @@
     *::after {
       box-sizing: border-box;
     }
+
     body {
       font-family: roboto, sans-serif;
       line-height: 1.5;
+      background-color: #eaeaea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
+    input,
+    button {
+      font: inherit;
+    }
+
     input {
       display: block;
       margin-bottom: 1rem;
@@ -20,9 +32,11 @@
       border: 1px solid black;
       padding: 0.5rem 1rem;
     }
+
     label {
       font-weight: bold;
     }
+
     button[type="submit"] {
       display: block;
       background-color: red;
@@ -32,16 +46,19 @@
       border-radius: 0.25rem;
 
     }
+
     .items-list {
       list-style: none;
       padding-left: 0;
     }
-    .items-list li + li {
+
+    .items-list li+li {
       margin-top: 1rem;
     }
   </style>
   <title>Multiples</title>
 </head>
+
 <body>
   <div class="form">
     <form>
@@ -100,4 +117,5 @@
 
   </script>
 </body>
+
 </html>
